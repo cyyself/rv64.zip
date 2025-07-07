@@ -47,8 +47,7 @@ This could happens while compiler and CPU does not well tuned for latest extensi
 
 ![img/c920v2-spec06-degrade.svg](img/c920v2-spec06-degrade.svg)
 
-In our evaluation using GCC15.0 using `-O3` optimization with different `-march` options, we found that the performance of the `rv64gcbv_zicond` binary is even slower than the `rv64gc` binary on the C920v2 (by 5%) and Spacemit X60 (by less than 1%). Even worse, the maxi
-This is likely due to the fact that the compiler and CPU are not well tuned for the latest extensions.
+In our evaluation using GCC15.0 using `-O3` optimization with different `-march` options, we found that the performance of the `rv64gcbv_zicond` binary is even slower than the `rv64gc` binary on the C920v2 (by 5%) and Spacemit X60 (by less than 1%), with maximum **3.34x slowdown** on 436.cactusADM on C920v2. This is likely due to the fact that the compiler and CPU are not well tuned for the latest extensions.
 
 Notably, RISC-V is not alone, such performance degradation also happens on other architectures, such as aarch64 and x86-64, especially for [SVE2 extension on aarch64 with GCC14.2 + O3](https://blog.cyyself.name/wp-content/uploads/2025/02/Screenshot-2025-02-09-at-19.17.59.png).
 
