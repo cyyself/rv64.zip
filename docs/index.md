@@ -17,7 +17,8 @@ Existing hardware:
 | Microarchitecture | Real chip come to market | RVA Profile Coverage | Additional Important Extensions |
 |-------------------|--------------------------|----------------------|---------------------------------|
 | Sifive U74        | 2022 (StarFive JH7110)   | RVA20U64             | Zba, Zbb                        |
-| Xuantie C920v1    | 2023 (SG2042, TH1520)    | RVA20U64             | xthead*                         |
+| Xuantie C910      | 2023 (TH1520)            | RVA20U64             | xthead*                         |
+| Xuantie C920v1    | 2023 (SG2042)            | RVA20U64             | xthead*                         |
 | SiFive P550       | 2024 (ESWIN EIC7700X)    | RVA20U64             | Zba, Zbb                        |
 | XiangShan NanhuV2 | 2024                     | RVA22U64             |                                 |
 | Spacemit X60      | 2024 (Spacemit K1)       | RVA22U64             | Vector, Zicond                  |
