@@ -14,14 +14,15 @@ Our dream: RVA23U64
 
 Existing hardware:
 
-| Microarchitecture | Real chip come to market | RVA Profile Coverage | Additional Important Extensions |
-|-------------------|--------------------------|----------------------|---------------------------------|
-| Sifive U74        | 2022 (StarFive JH7110)   | RVA20U64             | Zba, Zbb                        |
-| Xuantie C910      | 2023 (TH1520)            | RVA20U64             | xthead*                         |
-| Xuantie C920v1    | 2023 (SG2042)            | RVA20U64             | xthead*                         |
-| SiFive P550       | 2024 (ESWIN EIC7700X)    | RVA20U64             | Zba, Zbb                        |
-| XiangShan NanhuV2 | 2024                     | RVA22U64             |                                 |
-| Spacemit X60      | 2024 (Spacemit K1)       | RVA22U64             | Vector, Zicond                  |
+| Microarchitecture | Real chip come to market | RVA Profile | Additional Important Extensions |
+|-------------------|--------------------------|-------------|---------------------------------|
+| Sifive U74        | 2022 (StarFive JH7110)   | RVA20U64    | Zba, Zbb                        |
+| Xuantie C910      | 2023 (TH1520)            | RVA20U64    | xthead*                         |
+| Xuantie C920      | 2023 (SG2042)            | RVA20U64    | xthead*                         |
+| SiFive P550       | 2024 (ESWIN EIC7700X)    | RVA20U64    | Zba, Zbb                        |
+| XiangShan Nanhu V2| 2024                     | RVA20U64    | Zba, Zbb, Zbs                   |
+| Spacemit X60      | 2024 (Spacemit K1)       | RVA22U64    | Vector, Zicond                  |
+| Xuantie C920v2    |                          | RVA22U64    | Vector, Zicond, Zfa, Zawrs      |
 
 Throughout the RISC-V ecosystem, there are many different ISA extensions and profiles, which can lead to fragmentation and compatibility issues. From this table, we observe that some microarchitectures support some useful extensions that largely improve performance, such as vector and zbb, but the next generation of RVA profiles requires some additional extensions which are not supported by the current hardware. Thus, if we only rely on the RVA profiles rather than the real hardware capabilities, we may not be able to fully utilize the hardware's potential.
 
