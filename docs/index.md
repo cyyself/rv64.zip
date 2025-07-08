@@ -4,7 +4,7 @@ This project aims to provide a way for RISC-V (and even for x86-64 and aarch64) 
 
 - Leverages the latest ISA extensions, such as vector and even RVA23U64
 - Maintains compatibility with the RV64GC base ISA
-- Achieves even **higher** performance by dropping new extensions that hinder performance compared to RVA23U64 only binary compiled with `-march=rv64gcbv_zvbb_zvfhmin_zicond_zimop_zcmop_zfa_zawrs`
+- Achieves even **higher** performance compared to most ISA coverage binaries by dropping some extensions that hinder performance
 
 ## Background
 
