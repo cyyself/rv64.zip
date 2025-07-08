@@ -149,3 +149,19 @@ Finally, we only cloned 55 functions from the entire SPEC CPU 2006 benchmark. By
 - Evaluated with CoreMark and SPECCPU 2006
     - Outperforms most possible ISA extensions
     - Retaining binary compatibility with base RV64GC
+
+## Future Work
+
+Except from the research to automatically generate the function clone table, we also have some future work to do:
+
+### rv64.zip Distro
+
+Since most ISA coverage binaries are not well optimized because the compiler and CPU are not well tuned for the latest extensions, we can build a distro that leverages the latest ISA extensions and provides a better performance than most ISA coverage binaries via rv64.zip.
+
+First, we need to profiling the software and find the hotspots, and try with different ISA extensions to find the best performance on current hardware, and generate the function clone table based on the profiling result.
+
+Then, as a distro, we can maintain such a function clone table in our repo, and add `-ftarget-clones-table=such-table.json` option to the compiler when building the software, we will get a universal binary that:
+
+- Leverages the latest ISA extensions, such as vector and even RVA23U64
+- Maintains compatibility with the RV64GC base ISA
+- Achieves even **higher** performance compared to most ISA coverage binaries by dropping some extensions that hinder performance
