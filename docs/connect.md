@@ -8,4 +8,4 @@ For any inquiries, feedback, or contributions, please reach out to us via the fo
 
 ## WeChat Group
 
-[![wechat](img/wechat_group.jpg)](https://weixin.qq.com/g/AQYAAGYmZ5aQNvG5aznzoGxkRO4ydlGMSXSPoNhpNPrY9pCADJ717gZ9a719tpPR)
+[![wechat](img/wechat_group.jpg?until=20250721)](https://weixin.qq.com/g/AQYAAGYmZ5aQNvG5aznzoGxkRO4ydlGMSXSPoNhpNPrY9pCADJ717gZ9a719tpPR)
